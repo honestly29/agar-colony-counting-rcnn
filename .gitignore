@@ -45,6 +45,8 @@ lightning_logs/
 # Local data
 data/images/
 data/raw/
+data/annotations.json
+
 
 # IDE/editor files
 .vscode/
