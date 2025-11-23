@@ -3,6 +3,10 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# Utility files
+audit.py
+check_gpu.py
+
 # C extensions
 *.so
 
