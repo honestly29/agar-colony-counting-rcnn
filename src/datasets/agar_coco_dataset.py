@@ -106,7 +106,6 @@ class AGARCocoDataset(Dataset):
             "area": areas,
             "iscrowd": iscrowd,
             "image_id": torch.tensor([img_id]),
-            # === NEW fields for plate-level eval ===
             "patch_origin": (left, top),                        # patch top-left corner in plate coords
             "orig_size": (full_img.height, full_img.width),     # (H,W) of full plate
         }

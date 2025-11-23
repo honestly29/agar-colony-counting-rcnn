@@ -96,7 +96,7 @@ model = get_model(num_classes=2)  # background + colony
 model.to(device)
 
 
-# === Optimizer & Scheduler ===
+# === Optimiser & Scheduler ===
 params = [p for p in model.parameters() if p.requires_grad]
 optimizer = torch.optim.SGD(params, lr=LR, momentum=MOMENTUM, weight_decay=WEIGHT_DECAY)
 lr_scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=STEP_SIZE, gamma=GAMMA)

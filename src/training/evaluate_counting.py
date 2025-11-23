@@ -189,7 +189,7 @@ def evaluate_counting(
     # --- Save best thresholds to JSON ---
     if save_dir is not None:
         save_dir = Path(save_dir)
-        save_dir.mkdir(parents=True, exist_ok=True)  # ensure directory exists
+        save_dir.mkdir(parents=True, exist_ok=True)  
         best_json = save_dir / "best_postproc.json"
         best_info = {
             "epoch": epoch,
@@ -240,7 +240,7 @@ def evaluate_counting(
         else:
             bin_metrics[label] = {"n": 0, "mae": None, "rmse": None, "bias": None, "msle": None, "smape": None}
 
-    # --- Print report ---
+ 
     print(f"\nEvaluation on {len(true_counts_patch)} patches from {len(plate_ids)} plates:")
     print("Patch-level metrics:")
     print(f"  MAE   = {mae_patch:.3f}")
