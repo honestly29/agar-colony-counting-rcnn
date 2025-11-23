@@ -6,6 +6,7 @@ __pycache__/
 # Utility files
 audit.py
 check_gpu.py
+src/sanity_check.py
 
 # C extensions
 *.so
